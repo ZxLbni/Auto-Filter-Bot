@@ -72,15 +72,15 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "mrnoobx")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/NOOBPrivate')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/NOOBPrivateChats')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/l_abani")
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/NOOBPrivate')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/NOOBPrivate')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/NOOBPrivateChats')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/l_abani")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "t.me/l_abani")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 360)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi english telugu tamil kannada malayalam marathi punjabi').split()]
@@ -95,11 +95,11 @@ INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTE
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '3600'))
 
 # boolean settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', False)
-PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
+PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', True)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
